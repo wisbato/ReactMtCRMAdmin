@@ -1,0 +1,154 @@
+.viewticket-container {
+  padding: 60px 20px;
+  margin-top: 20px;
+  background: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enquiry-card-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+
+.card-user,
+.card-description,
+.card-status,
+.card-date {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #374151;
+}
+
+.ticket-reply-container {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.ticket-reply {
+  display: flex;
+  width: 100%;
+}
+
+.ticket-reply .reply-content {
+  width: 50%;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.admin-reply {
+  justify-content: flex-end;
+}
+
+.admin-reply .reply-content {
+  background-color: #f1f5f9; /* light gray for admin */
+  border-left: 4px solid #3b82f6;
+  text-align: left;
+}
+
+.user-reply {
+  justify-items: end;
+  justify-content: flex-start;
+}
+
+.user-reply .reply-content {
+  background-color: #dbeafe; /* light blue for user */
+  border-right: 4px solid #3b82f6;
+  text-align: left;
+}
+
+
+.add-reply-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.reply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reply-form input[type='text'] {
+  font-size: 16px;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.reply-form input[type='text']:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.submit-button {
+  align-self: flex-end;
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.submit-button:hover {
+  background-color: #1e40af; /* blue-800 */
+  transform: translateY(-1px);
+}
+
+
+.status-open,
+.status-inprogress,
+.status-resolved,
+.status-closed {
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status-open {
+  background-color: var(--primary-background);
+}
+
+.status-inprogress {
+  background-color: #0ea5e9;
+}
+
+.status-resolved,
+.status-closed {
+  background-color: #6b7280;
+}

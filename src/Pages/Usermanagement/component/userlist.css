@@ -1,0 +1,317 @@
+.user-list-main-container .user-list-main {
+    /* background: #e5e7eb; */
+    padding: 1.5rem;
+    /* min-height: 100vh; */
+    height: 100vh;
+    min-height: 1300px;
+}
+
+.user-list-main-container .user-list-main h1 {
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.userlist-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    padding: 20px;
+    /* min-height: 80vh; */
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th, 
+.table td {
+    padding: 16px 8px; /* Increased vertical padding */
+    vertical-align: middle;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Action column specific styling */
+.table td:last-child {
+    padding: 12px 8px; /* Slightly less padding for action column */
+}
+
+/* Action container */
+.action-container {
+    display: flex;
+    justify-content: space-between; /* This pushes button to right */
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-width: 200px; /* Adjust based on your needs */
+}
+
+/* Icons row */
+.icon-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Icons container */
+.action-icons {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0; /* Prevents icons from shrinking */
+}
+
+/* Promote button styling */
+.promote-btn {
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+    background: var(--primary-gradient);
+    border: none;
+    border-radius: 6px;
+    box-shadow: rgba(0, 128, 0, 0.2) 0px 2px 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-left: auto; /* Pushes button to right */
+    flex-shrink: 0; /* Prevents button from shrinking */
+}
+
+/* Icon styling */
+.action-icon {
+    color: #555;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.action-icon:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .user-list-main {
+        padding: 1rem;
+    }
+    
+    .userlist-containerr {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .action-container {
+        gap: 8px;
+        min-width: auto;
+    }
+    
+    .promote-btn {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+    
+    .action-icon {
+        font-size: 14px;
+    }
+    
+    .user-list-main h1 {
+        font-size: 28px;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Search section */
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-list-btn {
+    display: flex;
+    gap: 8px;
+}
+
+.user-list-btn button {
+    background: var(--primary-gradient);
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px var(--primary-box-shadow);
+    transition: background 0.3s ease, transform 0.2s ease;
+    padding: 6px 12px;
+    height: 36px;
+    min-width: 100px;
+}
+
+/* Table container */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+/* Pagination */
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.table-bottom-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-bottom-content select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pagination-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.pagination-controls button {
+    border: none;
+    background: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.pagination-controls button.active {
+    background: var(--primary-background);
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-section {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .user-list-btn {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .user-list-btn button {
+        font-size: 12px;
+        padding: 4px 8px;
+        height: 32px;
+        min-width: 80px;
+    }
+    
+    .pagination-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .table th, 
+    .table td {
+        padding: 12px 6px;
+        font-size: 13px;
+    }
+}
+
+/* Status badge styles */
+.status-badge {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+  
+.status-active {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+  
+.status-blocked {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+  
+.status-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+/* Loading and error states */
+.loading,
+.error {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.125rem;
+    color: #6b7280;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.error {
+    color: #ef4444;
+}
+.action-btn1 button{
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: var(--primary-gradient);
+    border: none;
+    border-radius: 8px;
+    box-shadow: var(--primary-box-shadow) 0px 4px 6px;
+    cursor: pointer;
+    transition: 0.3sease-in-out;
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: visible; /* Ensures full visibility */
+}
+
+.dark-mode-tbody {
+    background-color: #121212 !important;
+  }
+  
+  /* Dark mode for table rows */
+  .dark-mode-tr {
+    background-color: #121212 !important;
+    color: white !important;
+  }
+  
+  /* Dark mode for table cells */
+  .dark-mode-th {
+    background-color: #121212 !important;
+    color: white !important;
+    border-color: #333 !important;
+  }
+  .dark-mode-td {
+    background-color: #121212 !important;
+    color: white !important;
+    border-color: #333 !important;
+  }
+
+  .dark-placeholder::placeholder {
+    color: #ffffff !important;
+  }
+
+  .bg-black .btn-close {
+    filter: invert(1) !important;
+  }

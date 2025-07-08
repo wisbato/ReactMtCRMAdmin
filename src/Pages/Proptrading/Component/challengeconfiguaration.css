@@ -1,0 +1,46 @@
+.challenge-wrapper{
+    padding: 30px;
+    @media screen and (max-width: 768px) {
+        
+        margin-top: 60px;
+        
+    }
+}
+.challenge-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+     
+        
+    }
+}
+.challenge-btn h1{
+    font-size: 30px;
+    font-weight: bolder;
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+        
+    }
+}
+.challenge-wrapper .user-list-btn .challenge-btn-new{
+    @media screen and (max-width: 768px) {
+        /* padding: 10px; */
+        font-size: 12px;
+        
+    }
+}
+
+
+/* challenge configuaration style */
+.challengeconfiguarationlist-container .challengeconfiguaration-title{
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+} 

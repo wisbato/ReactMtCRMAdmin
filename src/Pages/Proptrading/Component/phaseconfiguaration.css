@@ -1,0 +1,118 @@
+.phase-configuration-wrapper {
+    padding: 24px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 100%; /* Ensure it fits container */
+    max-width: 500px; /* Optional: Set a max width */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Ensures left alignment */
+    flex-direction: column;
+}
+
+.phase-configuration-wrapper h1 {
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.phase-configuration-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensures full width */
+    gap: 10px;
+    padding: 8px 0; /* Adds spacing */
+    border-bottom: 1px solid #eee; /* Optional: Light divider */
+}
+
+.phase-configuration-content p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    flex: 1; /* Ensures equal space */
+}
+
+.phase-configuration-content span {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.checkbox-container {
+    display: flex;
+    align-items: start; /* Ensures the checkbox stays centered */
+}
+
+.phase-configuration-content input {
+    width: 100%;
+    max-width: 170px; /* Limits maximum size */
+    padding: 8px 8px;
+    border-radius: 6px;
+}
+.phase-configuration-content select {
+    width: 100%;
+    max-width: 170px; /* Ensure same max-width as input */
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+}
+
+/* slider */
+/* Existing styles */
+.phase-configuration-content-slider {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.slider-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.slider {
+    width: 100%;
+    appearance: none;
+    height: 1px; /* Reduced height */
+    background: var(--primary-background);
+    border-radius: 8px;
+    outline: none;
+    padding: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border: 2px solid var(--primary-border);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.slider-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 8px;
+    color: var(--primary-color);
+}
+
+.tooltip {
+    position: absolute;
+    top: -30px;
+    background: black;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}

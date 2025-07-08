@@ -1,0 +1,123 @@
+.history-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; /* Spacing between cards */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--primary-box-shadow);
+    background-color: #fff;
+}
+
+.history-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 5px var(--primary-box-shadow);
+    border-radius: 8px;
+    width: 100%;
+    min-height: 100px;
+}
+
+.history-card-body p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Responsive: Adjust for smaller screens */
+@media (max-width: 1024px) {
+    .history-cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    .history-cards {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+
+
+/* depositreport css */
+.depositreport-main1 .flex{
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+       
+        
+    }
+
+}
+.depositreport-main1 .status{
+    width: 100%;
+    @media screen and (max-width: 768px) {
+       
+        width: 100%;
+        
+    }
+}
+.withdrawal-report-main1 .flex{
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+}
+
+.ib-withdrawal-report-main1 .flex{
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+}
+/* position report css */
+.historyreport-main1{
+    @media screen {
+        min-height: 100vh;
+        
+    }
+}
+.historyreport-main1 .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .historyreport-main1 .flex > * {
+    flex: 1 1 30%; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .historyreport-main1 .flex {
+      flex-direction: column;
+    }
+  
+    .historyreport-main1 .flex > * {
+      width: 100%;
+      flex: 1 1 100%;
+    }
+  }
+
+/* Add this to your CSS file */
+input[type="date"] {
+    color-scheme: light;
+  }
+  
+  .date-input-dark::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  

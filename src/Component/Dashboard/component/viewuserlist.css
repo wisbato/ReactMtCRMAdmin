@@ -1,0 +1,91 @@
+.viewuserlist{
+    padding: 80px 30px;
+    margin-top: 20px;    background: #e5e7eb;
+    width: 100%;
+    /* height: 100vh; */
+
+}
+
+
+
+
+ /* Parent container to align cards in a row */
+.viewuserlist-cards {
+    display: flex;
+    flex-wrap: wrap; 
+ justify-content: space-between;
+    gap: 16px; 
+    @media screen and (max-width: 768px) {
+        flex-direction: column; 
+        gap: 8px; 
+        width: 100%!important;
+        
+    }
+   
+}
+
+/* Wrapper for individual cards */
+.viewuser-dashboard-cards-wrapper {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), var(--primary-gradient));
+    width: calc(100% - 16px); 
+    padding: 2px;
+    @media screen and (max-width: 768px) {
+        width: calc(100% - 16px); 
+        padding: 0px;
+        
+    }
+}
+
+/* Card body styling */
+.viewuser-dashboard-cards-wrapper .card-body {
+    border-radius: 8px;
+    
+    background-color: white;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.viewuser-dashboard-cards-wrapper .user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+    .viewuserlist .user-list-btn {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+      gap: 10px; /* spacing between buttons */
+    }
+  
+    .viewuserlist .user-list-btn .user-list-btns {
+      font-size: 14px !important;
+      white-space: nowrap;
+      padding: 7px !important;
+      width: 100%; /* Ensure buttons expand within grid cell */
+    }
+  }
+
+
+  /* viewusercards css */
+  .userview-dashboard-cards-wrapper {
+    display: flex;
+    gap: 16px;
+    
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.userview-dashboard-cards-wrapper .card-body {
+    flex: 1; /* Equal width cards */
+    min-width: 0; /* Prevent overflow */
+}
+ 
+
+  
+ 

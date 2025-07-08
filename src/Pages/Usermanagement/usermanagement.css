@@ -1,0 +1,14 @@
+.usermanagement-wrapper{
+    background: #e5e7eb;
+    width: 100%;
+    padding: 80px 30px;
+    margin-top: 20px;
+    /* height: 100vh; */
+    min-height: 100vh;
+   
+/*     overflow-x: hidden;
+ */}
+
+ .usermanagement-wrapper.dark-mode{
+ background-color: black;
+}

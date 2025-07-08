@@ -1,0 +1,103 @@
+.smtp-container {
+    padding: 20px;
+  }
+  
+  .smtp-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .smtp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .smtp-header h1 {
+    margin: 0;
+  }
+  
+  .add-smtp-btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .smtplist-container {
+    margin-top: 20px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Modal styles */
+  .modal-content {
+    border-radius: 10px;
+  }
+  
+  .modal-header {
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .modal-footer {
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .smtp-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .add-smtp-btn {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    th, td {
+      padding: 8px 10px;
+    }
+  }

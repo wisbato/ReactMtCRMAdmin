@@ -1,0 +1,25 @@
+.news-wrapper2{
+    height: 100vh;
+    min-height: 1350px;
+    background: #e5e7eb;
+}
+.chart-container-sub {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* padding: 0 20px; */
+    gap: 20px;
+}
+
+.chart-container-sub > * {
+    flex: 1;
+    max-width: 48%;
+    background: #fff; /* Ensures visibility of the shadow */
+    padding: 15px;
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+.userlist-container{
+    margin-bottom: 60px;
+}

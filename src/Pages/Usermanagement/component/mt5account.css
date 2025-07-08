@@ -1,0 +1,23 @@
+.main-dashboard-form {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.form-title {
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.submit-btn {
+    background: var(--primary-background);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.dark-mode-placeholder::placeholder {
+    color: #ffffff !important;
+  }

@@ -1,0 +1,32 @@
+.mt5userlist-titlee{
+    @media screen and (max-width: 768px) {
+       font-size: 26px;
+       font-weight: 500;
+        
+    };
+}
+
+.dark-mode-tbody {
+    background-color: #121212 !important;
+  }
+  
+  /* Dark mode for table rows */
+  .dark-mode-tr {
+    background-color: #121212 !important;
+    color: white !important;
+  }
+  
+  /* Dark mode for table cells */
+  .dark-mode-td {
+    background-color: #121212 !important;
+    color: white !important;
+    border-color: #333 !important;
+  }
+
+  .dark-placeholder::placeholder {
+    color: #ffffff !important;
+  }
+
+  .bg-black .btn-close {
+    filter: invert(1) !important;
+  }

@@ -1,0 +1,100 @@
+*{
+ margin: 0;
+ padding: 0; 
+  box-sizing: border-box;   
+  font-family: "Nunito", serif;
+  /* overflow-x: hidden; */
+  
+}
+
+/* Light theme is default (Bootstrap base) */
+
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .header-container {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.dark-mode .header-logo button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+:root[data-theme='green'] {
+  --primary-color: #55da59;
+  --primary-gradient: linear-gradient(45deg, #32cd32, #00b300, #007f00);
+  --secondary-gradient: linear-gradient(145deg, #dcebdc, #d7e1d7, #29ac29);
+  --primary-background: #00b300;
+  --primary-border: rgba(34, 197, 94, 0.6);
+  --primary-box-shadow: rgba(0, 128, 0, 0.3) 0px 4px 6px;
+}
+ 
+:root[data-theme='purple'] {
+  --primary-color: #8b5cf6;
+  --primary-gradient: linear-gradient(45deg, #7c3aed, #5b21b6, #3b0764);
+  --secondary-gradient: linear-gradient(145deg, #e9d5ff, #f3e8ff, #c084fc);
+  --primary-background: #6d28d9;
+  --primary-border: rgba(139, 92, 246, 0.5);
+  --primary-box-shadow: rgba(139, 92, 246, 0.3) 0px 4px 6px;
+}
+ 
+ 
+ 
+ 
+:root[data-theme='red'] {
+  --primary-color: #ef4444;
+  --primary-gradient: linear-gradient(45deg, #ff5e5e, #cc0000, #990000);
+  --secondary-gradient: linear-gradient(145deg, #ffd6d6, #ffeaea, #ff9999);
+  --primary-background: #cc0000;
+  --primary-border: rgba(239, 68, 68, 0.5);
+  --primary-box-shadow: rgba(239, 68, 68, 0.3) 0px 4px 6px;
+}
+ 
+:root[data-theme='orange'] {
+  --primary-color: #f97316;
+  --primary-gradient: linear-gradient(45deg, #ff7c1f, #cc5c00, #994700);
+  --secondary-gradient: linear-gradient(145deg, #ffe0cc, #fff0e6, #ffb380);
+  --primary-background: #cc5c00;
+  --primary-border: rgba(249, 115, 22, 0.5);
+  --primary-box-shadow: rgba(249, 115, 22, 0.3) 0px 4px 6px;
+}
+ 
+:root[data-theme='blue'] {
+  --primary-color: #3b82f6;
+  --primary-gradient: linear-gradient(45deg, #4ea8ff, #0066cc, #004d99);
+  --secondary-gradient: linear-gradient(145deg, #cce6ff, #e6f2ff, #99ccff);
+  --primary-background: #0066cc;
+  --primary-border: rgba(59, 130, 246, 0.5);
+  --primary-box-shadow: rgba(59, 130, 246, 0.3) 0px 4px 6px;
+}
+ 
+:root[data-theme='yellow'] {
+  --primary-color: #facc15;
+  --primary-gradient: linear-gradient(45deg, #ffe44d, #ccaa00, #997f00);
+  --secondary-gradient: linear-gradient(145deg, #fff8cc, #fffae6, #fff099);
+  --primary-background: #ccaa00;
+  --primary-border: rgba(250, 204, 21, 0.5);
+  --primary-box-shadow: rgba(250, 204, 21, 0.3) 0px 4px 6px;
+}
+
+:root[data-theme='pink'] {
+  --primary-color: #fa15e7;
+  --primary-gradient: linear-gradient(45deg, #ea33b3, #cc00cc, #99008f);
+  --secondary-gradient: linear-gradient(145deg, #ffccfd, #fee6ff, #ff99f8);
+  --primary-background: #cc00ad;
+  --primary-border: rgba(250, 21, 223, 0.5);
+  --primary-box-shadow: rgba(250, 21, 219, 0.3) 0px 4px 6px;
+}
+ 
+:root[data-theme='indigo'] {
+  --primary-color: #6366f1;
+  --primary-gradient: linear-gradient(45deg, #7f83ff, #4d4fcc, #333699);
+  --secondary-gradient: linear-gradient(145deg, #e0e0ff, #f0f0ff, #b3b3ff);
+  --primary-background: #4d4fcc;
+  --primary-border: rgba(99, 102, 241, 0.5);
+  --primary-box-shadow: rgba(99, 102, 241, 0.3) 0px 4px 6px;
+}

@@ -1,0 +1,80 @@
+.general-configuration-wrapper {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 80px;
+    margin-top: 30px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+   
+  }
+  
+  .general-configuration-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+  
+  .config-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1c2c3a;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .time-input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .update-btn {
+    background-color: var(--primary-background);
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .custom-time-popup .ant-picker-ok button {
+    background: transparent !important; 
+    box-shadow: none !important;         
+    color: #1677ff;                     
+    border: none;
+    font-weight: 500;
+  }
+  /* Style for the TimePicker input field */
+  .custom-time-popup .ant-picker-ok button:hover,
+  .custom-time-popup .ant-picker-ok button:focus {
+    background: transparent !important;
+    box-shadow: none !important;
+  }

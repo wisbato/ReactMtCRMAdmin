@@ -1,0 +1,8 @@
+.news-wrapper{
+    padding: 80px 30px;
+    margin-top: 20px;    background: #e5e7eb;
+    width: 100%;
+    min-height: 100vh;
+   /*  min-height: 1350px; */
+
+}

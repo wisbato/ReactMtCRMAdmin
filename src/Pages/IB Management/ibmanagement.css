@@ -1,0 +1,56 @@
+.ibmanagement-wrapper {
+    padding: 80px 30px;
+    margin-top: 20px;
+    background: #e5e7eb;
+    width: 100%;
+    height: 100vh;
+}
+
+/* flexible commission  responsive */
+.flexiblecommission .user-list-btn {
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+}
+
+.flexiblecommission .flexiblecommission-btn {
+    @media screen and (max-width: 768px) {
+        width: 100%;
+
+    }
+}
+
+.flexiblecommission .search-section {
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+
+    }
+}
+
+.flexiblecommission .search-section .form-control {
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        justify-content: right
+    }
+}
+
+.flexiblecommission .search-section .user-list-btn {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: row;
+
+
+    }
+}

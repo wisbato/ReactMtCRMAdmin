@@ -1,0 +1,11 @@
+.main-button button{
+    background: linear-gradient(45deg, #32cd32, #00b300, #007f00) ;
+    color: #fff ;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, .3);
+    transition: background .3sease, transform .3sease;
+    padding: 10px 20px;
+}

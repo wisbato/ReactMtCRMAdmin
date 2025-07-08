@@ -1,0 +1,65 @@
+.mt5-search-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 10px;
+      
+    }
+  }
+  
+  .search-btn {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-btn:hover {
+    background: var(--primary-gradient);
+  }
+
+
+  /* position report */
+  .positionreport-main1 .flex {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .positionreport-main1 .flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
+  .positionreport-main1 .btn{
+    @media screen and (max-width: 768px) {
+       
+        width: 100%;
+      
+    }
+  }
+  .positionreport-main1 .status-dropdown{
+    @media screen and (max-width: 768px) {
+        width: 100%;
+      
+    }
+  }
+  
+  
+  .positionreport-main1{
+    @media screen {
+      min-height: 100vh;
+      
+    }
+  }

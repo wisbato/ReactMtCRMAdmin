@@ -1,0 +1,32 @@
+.addgroup-wrapper{
+    padding: 30px;
+}
+
+/* grouplist edit */
+.grouplistedit-container{
+    padding: 80px 30px;
+    margin-top: 20px;    background: #e5e7eb;
+    width: 100%;
+    height: 100vh;
+    min-height: 1100px;
+
+}
+label:has(*:not(:first-child))::after,
+label:has(*:not(:first-child)) *::after {
+  color: red;
+}
+
+label::after {
+  content: '';
+}
+
+label:has(*) {
+  color: inherit;
+}
+
+/* Better and simpler approach below */
+.required-star {
+    color: red;
+    margin-left: 2px;
+  }
+  

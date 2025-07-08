@@ -1,0 +1,181 @@
+/* Sidebar Container */
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+    padding: 10px 0px;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0);
+    @media screen and (max-width: 768px) {
+       
+        /* display: none; */
+        
+    }
+  }
+
+  .sidebar-container.dark-mode {
+    background: #121212;
+}
+  .sidebar-container.collapsed {
+    transform: translateX(-100%); /* Slide out of view */
+    width: 70px;
+  }
+
+  .sidebar-logo1.dark-mode button {
+    color: #f5f5f5; /* Only works if SVG uses currentColor */
+  }
+
+  .sidebar-logo,
+  .sidebar-logo1,
+  .menu-item span {
+    transition: opacity 0.3s ease;  
+ 
+  }
+
+.sidebar-container.collapsed .sidebar-logo1 .sidebar-logo,
+.sidebar-container.collapsed .menu-item span,
+.sidebar-container.collapsed .sub-menu {
+  display: none; 
+}
+.sidebar-container.collapsed .menu-item span {
+    opacity: 0;  /* ✅ Fully transparent */
+    pointer-events: none;  
+  }
+
+.main-content {
+    margin-left: 240px; 
+    width: calc(100% - 240px);
+    transition: all 0.3s ease-in-out;
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+        width: 100%;
+        
+    }
+}
+.sidebar-container.collapsed ~ .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+.sidebar-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Sidebar Logo */
+.sidebar-logo1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+    padding: 12px;
+}
+
+.sidebar-menu::-webkit-scrollbar {
+    display: none;
+}
+
+/* Sidebar Logo Image */
+.sidebar-logo {
+    width: 70px;
+    height: 70px;
+}
+
+/* Icons inside the sidebar */
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 14px;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(14 23 38 / var(--tw-text-opacity));
+    font-weight: 500;
+}
+
+li:hover,
+li.active {
+    background: var(--primary-gradient);
+}
+
+
+.sidebar-menu li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+ 
+.navbar-icon-color {
+    --tw-bg-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu-item.dark-mode{
+    color: #f5f5f5;
+}
+
+.navbar-icon-color {
+    font-size: 18px;
+}
+
+/* Sub-menu styling */
+.sub-menu {
+    padding-left: 30px;
+}
+.sub-menu.dark-mode{
+    color: #f5f5f5;
+}
+.sub-menu.dark-mode .sub-icons {
+    color: #f5f5f5 !important;
+  }

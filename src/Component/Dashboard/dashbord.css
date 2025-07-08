@@ -1,0 +1,151 @@
+.dashbord-container{
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    width: 100%;
+    padding: 80px 30px;
+    margin-top: 20px;    
+    gap: 15px;
+}
+.dashbord-container.dark-mode {
+    background: #121212;
+    color: #f5f5f5;
+}
+.dashbord-container h1{
+    
+    font-size: 30px ;
+    font-weight: bolder;
+    margin: 7px;
+    color: var(--primary-color);
+}
+.dashboard-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    /* padding: 20px; */
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard-cards-container {
+        display: grid;
+        align-self: center;
+        grid-template-columns: 1fr;
+        justify-content: center; /* centers the whole column grid */
+    }
+
+   
+}
+
+.dashboard-cards-container > * {
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        max-width: 400px;
+        width: 100%;
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        
+    }
+} 
+
+/* Dashboard Cards Section */
+.dashboard-cards-wrapper {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr);  */
+    gap: 20px;
+    /* width: 100%; */
+    padding: 10px;
+    border-radius: 8px;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr); 
+        width: 100%;
+        padding: 0px 20px;
+        
+    }
+}
+
+/* Individual Cards */
+.card-body {
+    border-radius: 8px;
+    background-color: white;
+    padding: 12px;
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto;    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (max-width: 768px) {
+    .dashboard-cards-container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+@media (max-width: 1024px) { 
+    .dashboard-cards-container {
+        grid-template-columns: repeat(1, 1fr); 
+        margin-left: -10%;
+    }
+}
+
+
+
+.dashboard-col{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @media screen and (max-width: 768px) {
+        gap: 5px;
+        width: 100%;
+        
+    }
+
+}
+.chart-btn-section{
+
+}
+.chart-btn-section .btn-section{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 20px;
+}
+.btn-section button{
+    padding: 10px 20px;
+    background: var(--primary-gradient) !important;
+    color: #fff !important;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--primary-box-shadow);
+    transition: background .3sease, transform .3sease;
+    border: none;
+    cursor: pointer;
+}
+.deposit-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 16px; 
+    justify-content: center;
+    
+    padding: 16px;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        padding: 0px 20px;
+        
+    }
+}
+
+.deposit-card-wrapper > * {
+    width: 100%; 
+}
+
+
+
+
+
