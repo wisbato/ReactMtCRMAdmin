@@ -1,3 +1,4 @@
+// Dashboard.tsx
 import { useTheme } from '../../context/ThemeContext'
 import Chart from './component/Chart'
 import Clientlist from './component/Clientlist'
@@ -12,46 +13,29 @@ const Dashboard = () => {
         <div className={`dashbord-container ${theme === 'dark' ? 'dark-mode' : ''}`}>
             <h1>Dashboard</h1>
             <div className='dashboard-col'>
-
                 <div className='dashboard-cards-container'>
-                    {/* <Dashboardcard />
-                    <Dashboardcard />
-                    <Dashboardcard />
-                    <Dashboardcard />
-                    */}
                     <Dashboardcards/>
-
                     <Clientlist />
                 </div>
                 <div>
                 </div>
             </div>
-            <div className='chart-btn-section'>
-                <div className='btn-section'>
-                    <button>Transaction</button>
-                    <button>Client</button>
-                </div>
-
-                <Chart />
-            </div>
-
-
+            
+            <Chart />
 
             <div className='deposit-card-wrapper'>
-
-            <Depositcard title={'Deposit'} value={'100'} />
-            <Depositcard title={'Deposit'} value={'100'} />
-            <Depositcard title={'Deposit'} value={'100'} />
-            <Depositcard title={'Deposit'} value={'100'} />
-            <Depositcard title={'Deposit'} value={'100'} />
-            <Depositcard title={'Deposit'} value={'100'} />
-            <Depositcard title={'Deposit'} value={'100'} />
-
-            <Depositcard title={'Deposit'} value={'100'} />
-
-
-
-
+                <Depositcard title={'Daily Deposit'} value={'100'} />
+                <Depositcard title={'Weekly Deposit'} value={'100'} />
+                <Depositcard title={'Monthly Deposit'} value={'100'} />
+                <Depositcard title={'Total Deposit'} value={'100'} />
+                <Depositcard title={'Daily Withdraw'} value={'100'} />
+                <Depositcard title={'Weekly Withdraw'} value={'100'} />
+                <Depositcard title={'Monthly Withdraw'} value={'100'} />
+                <Depositcard title={'Total Withdraw'} value={'100'} />
+                <Depositcard title={'Daily IB Withdraw'} value={'100'} />
+                <Depositcard title={'Weekly IB Withdraw'} value={'100'} />
+                <Depositcard title={'Monthly IB Withdraw'} value={'100'} />
+                <Depositcard title={'Total IB Withdraw'} value={'100'} />
             </div>
         </div>
     )

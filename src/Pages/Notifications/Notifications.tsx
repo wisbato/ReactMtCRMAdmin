@@ -6,12 +6,13 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { 
   fetchAllNotifications, 
   markNotificationAsRead, 
-  deleteNotification,
   Notification
 } from '../../api/notification/getNoti';
 import './notifications.css';
 import { useTheme } from "../../context/ThemeContext";
 import { markNotificationRead } from '../../api/notification/readNoti';
+import { deleteNotification } from '../../api/notification/deleteNoti';
+import { toast } from 'react-hot-toast';
 
 const Notifications = () => {
   const { theme } = useTheme();
@@ -41,13 +42,21 @@ const Notifications = () => {
   });
 
   // Mutation for deleting
-  const { mutate: deleteNotif } = useMutation({
-    mutationFn: deleteNotification,
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['notifications'] });
-      setDropdownOpenId(null);
-    }
-  });
+  // In your Notifications component
+const { mutate: deleteNotif } = useMutation({
+  mutationFn: (id: number) => deleteNotification({ id }), // Pass the ID as an object
+  onSuccess: () => {
+    queryClient.invalidateQueries({ queryKey: ['notifications'] });
+    setDropdownOpenId(null);
+    // Optional: Add a success message/toast here
+    toast.success("Notification deleted successfully!");
+  },
+  onError: (error) => {
+    console.error("Error deleting notification:", error);
+    toast.error("Error deleting notification:");
+    // Optional: Add an error toast here
+  }
+});
 
   // Filter notifications based on read/unread status
   const filteredNotifications = notifications.filter(notif => 
