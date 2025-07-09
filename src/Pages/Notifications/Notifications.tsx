@@ -11,6 +11,7 @@ import {
 } from '../../api/notification/getNoti';
 import './notifications.css';
 import { useTheme } from "../../context/ThemeContext";
+import { markNotificationRead } from '../../api/notification/readNoti';
 
 const Notifications = () => {
   const { theme } = useTheme();
@@ -28,10 +29,14 @@ const Notifications = () => {
 
   // Mutation for marking as read
   const { mutate: markAsRead } = useMutation({
-    mutationFn: markNotificationAsRead,
+    mutationFn: (id: number) => markNotificationRead({id}),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['notifications'] });
       setDropdownOpenId(null);
+    },
+    onError: (error) => {
+      console.error("Error marking notification as read:", error);
+      // You could add a toast notification here if you want
     }
   });
 

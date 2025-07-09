@@ -346,7 +346,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
                 <FontAwesomeIcon icon={faMinus} className="navbar-icon-color" />
                 Change User Password
               </li>}
-              { can('add_existing_client') && <li
+              {/* { can('add_existing_client') && <li
                 className={`sub-icons ${
                   selectedItem === "addexistingclient" ? "selected" : ""
                 }`}
@@ -360,7 +360,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
               >
                 <FontAwesomeIcon icon={faMinus} className="navbar-icon-color" />
                 Add Existing Client
-              </li>}
+              </li>} */}
               { can('change_mt5_password') && <li
                 className={`sub-icons ${
                   selectedItem === "changemt5password" ? "selected" : ""
